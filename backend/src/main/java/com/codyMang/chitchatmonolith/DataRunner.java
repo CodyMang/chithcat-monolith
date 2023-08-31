@@ -24,11 +24,11 @@ public class DataRunner implements CommandLineRunner{
     @Override
     public void run(String...args) throws Exception{
 
-        if(roleRepository.findAll().isEmpty()) {
-            roleRepository.save(new Role(ERole.ROLE_USER));
-            roleRepository.save(new Role(ERole.ROLE_MODERATOR));
-            roleRepository.save(new Role(ERole.ROLE_ADMIN));
-        }
+        // if(roleRepository.findAll().isEmpty()) {
+        //     roleRepository.save(new Role(ERole.ROLE_USER));
+        //     roleRepository.save(new Role(ERole.ROLE_MODERATOR));
+        //     roleRepository.save(new Role(ERole.ROLE_ADMIN));
+        // }
 
     }
 }
